@@ -1,0 +1,57 @@
+.gameImg:after {
+    background: url("../img/slide-02.jpg") repeat scroll center center transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bgHeader {
+	color: #fff;
+}
+
+.nav>li>a {
+	color: #fff;
+}
+
+.nav>li>a:hover {
+	color: black;
+}
+
+.navbar h4 {
+	color: #fff
+}
+
+
+
+.jumbotron {
+	color: black;
+	background: url("../img/gamification.jpg") right no-repeat;
+    position: relative;
+    padding-left: 20px;    
+}
+
+.centerIcon {
+	margin: auto; 
+	text-align: center;
+}
+
+.achivementSettings{
+	color : blue;
+}
+
+.achivementContainerSettings{
+	background-color : blue;
+}
+
+.containerFred {
+background-color: #D4D4D4;
+margin: 0px auto;
+padding-right:24px;
+padding-left:24px;
+}
+

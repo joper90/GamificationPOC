@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/gamebase.css" rel="stylesheet">
+	<link href="css/slider.css" rel="stylesheet">
+    <title>Gamification Testing</title>
+  </head>
+  <body  ng-cloak>
+  
+	  <div class="container">	
+			<my-navbars></my-navbars>  	
+		  	<my-welcome></my-welcome>  	  		
+		 	<h4 class="bgHeader">My Information and Achievements...</h4>
+		 	<my-dynamic></my-dynamic>
+		 	<my-usergained></my-usergained>
+	  </div>
+
+	<!--  All the scripts and angular stuff. -->
+	<script src="jsEngines/jquery-2.0.3.min.js"></script>
+	<script src="jsEngines/bootstrap.min.js"></script>
+    <script	src="jsEngines/angular.min.js"></script>
+    <script src="jsEngines/jquery.backstretch.min.js"></script>
+        
+	<script src="angular/myApp.js"></script>
+	
+	<script src="angular/directives/d_navbars.js"></script>
+	<script src="angular/directives/d_userGainedAchivements.js"></script>
+	<script src="angular/directives/d_userDynamicProgress.js"></script>
+	<script src="angular/directives/d_welcome.js"></script>
+	
+	<script src="angular/controllers/c_HeaderController.js"></script>
+    <script src="angular/controllers/c_UserDetails.js"></script>
+    
+    <script src="js/myBackstretch.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    
+  </body>
+</html>

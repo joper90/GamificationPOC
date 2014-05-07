@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title>Gamification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/gamebase.css" rel="stylesheet">
+  </head>
+  
+  
+  <body ng-cloak style="margin-top: 70px;">
+  
+  	<my-loginnavbar></my-loginnavbar>
+	  
+  	<div class="jumbotron">
+  		<div class="container">
+    		<h1>Gamification POC/Demo</h1>
+    		<div class="well col-lg-4">
+				 <form class="form-group" action="displayUser" method="get">
+	      		 	<h3 class="form-group-heading">Please sign in:</h3>
+	      		 	
+	        		<input name="username" style="margin-bottom: 15px;" type="text" class="form-control" placeholder="Username">
+	        		<input name="password" style="margin-bottom: 15px;" type="password" class="form-control" placeholder="Password">
+	        		
+	       		 	<button class="btn btn-lrg btn-primary" type="submit">Sign in</button>
+	      		</form>
+			</div>	
+		</div>
+    </div>
+
+			
+      
+	<!--  All the scripts and angular stuff. -->
+	<script src="jsEngines/jquery-2.0.3.min.js"></script>
+	<script src="jsEngines/bootstrap.min.js"></script>
+    <script	src="jsEngines/angular.min.js"></script>
+    <script src="jsEngines/jquery.backstretch.min.js"></script>
+    
+	<script src="angular/myApp.js"></script>
+	<script src="angular/directives/d_loginNavbar.js"></script>
+	<script src="angular/controllers/c_HeaderController.js"></script>
+    <script src="angular/controllers/c_UserDetails.js"></script>
+  </body>
+</html>

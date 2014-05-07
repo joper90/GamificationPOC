@@ -1,0 +1,57 @@
+		
+<!--  Achievement information 
+
+	//Temp </br>
+	{{userData.hardAchivements}}</br>
+	//Soft now</br>
+	{{userData.softAchivements}}</br>
+	//END DUMP DATA </br>
+	</br>
+
+
+-->
+<div class="well" ng-controller="c_UserDetails" 		style="padding-left: 20px; padding-right: 20px" >
+		
+			
+	<h4>Current Achievements and Progress:</h4>
+	
+		<div ng-repeat='element in userData.hardAchivements'>
+			<div class="well">
+				<div class="row achivementSettings">
+	  				<div class="col-md-2 centerIcon">
+	  					<img ng-src="{{element.img}}" height="80" width="80"/>
+	  				</div>
+	  				<div class="col-md-10">
+	  					Name : <b>{{element.achivementName}}</b></br>
+						Description : {{element.description}}</br>
+						<div ng-show="element.completed">
+							Completed : {{element.completedDate | date:'MM/dd/yyyy @ h:mma'}}
+						</div></br>
+	  				</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div ng-repeat='element in userData.softAchivements'>
+			<div class="well achivementSettings">
+				<div class="row achivementSettings">
+	  				<div class="col-md-2 centerIcon">
+	  					<img ng-src="{{element.img}}" height="80" width="80"/>
+	  				</div>
+	  				<div class="col-md-10">
+	  					Name : <b>{{element.achivementName}}</b></br>
+						Description : {{element.description}}</br>
+						<div class="progress progress-striped active">	
+	  						<div class="progress-bar progress-bar-info" role="progressbar" style="width: {{element.progress}}%;"/>	
+	  						{{element.progress}}%
+						</div>					
+	  				</div>
+				</div>
+			</div>
+		
+		
+		</div>
+	
+</div>

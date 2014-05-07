@@ -1,0 +1,26 @@
+		
+<!--  DynamicProgress -->
+	
+<!--  Create teh target bar -->
+
+<div class="well" ng-controller="c_UserDetails" style="padding-left: 20px; padding-right: 20px" >
+	<div class="progress">
+	    <div class="progress-bar progress-bar-danger" style="width: 30%"/>
+	    <div class="progress-bar progress-bar-warning" style="width: 10%"/>
+	    <div class="progress-bar progress-bar-success" style="width: 30%"/>
+	    <div class="progress-bar progress-bar-warning" style="width: 20%"/>
+	    <div class="progress-bar progress-bar-danger" style="width: 10%"/>
+	</div>
+
+	<input type="text" class="span1" value="" data-slider-min="0" 
+		data-slider-max="60" data-slider-step="1" data-slider-value="5"  	
+		data-slider-handle="triangle"
+		data-slider-tooltip="hide" id="sl1">
+	
+	</br>
+	
+	Number of steps completed : {{userData.stepCount}}</br>
+	Average time per step : {{userData.avgTimePerStep}}</br>
+
+</div>
+<script src="js/mySlider.js"></script>

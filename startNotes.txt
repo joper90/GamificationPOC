@@ -1,0 +1,11 @@
+Notes:
+
+
+
+
+1) check ip matches controllers and the server - in the controllers
+2) Boolean flags to clean down and reset the server
+3) Startup, needs one login to start the user information... 
+4) Enable publications and CBE not n2.
+
+YOU NEED TO USE UK-SPOON NOT LOCALHOST to connect..or get and error 0.

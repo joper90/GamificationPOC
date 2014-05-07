@@ -1,0 +1,26 @@
+		
+<!--  Achievement information -->
+
+
+<div>		
+		
+			<div class="well" ng-controller="c_Achievements" style="padding-left: 20px; padding-right: 20px">			
+			
+	 			<div ng-repeat='element in aData.achivements'>
+					<div class="well">
+						<div class="row achivementSettings">
+  							<div class="col-md-2 centerIcon">
+  								<img ng-src="img/icons/{{element.gotImg}}" height="80" width="80"/>
+  							</div>
+  							<div class="col-md-10">
+  								Name : <b>{{element.name}}</b></br>
+								Description : {{element.description}}</br>
+								</br>
+  							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+	 		
+</div>
+

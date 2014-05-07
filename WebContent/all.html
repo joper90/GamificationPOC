@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/gamebase.css" rel="stylesheet">
+	<link href="css/ticker-style.css" rel="stylesheet" type="text/css" />
+    <title>Gamification Testing</title>
+  </head>
+  <body  ng-cloak>
+  
+  	<div class="container">	  		
+		<my-navbars></my-navbars>  	
+	  	<header-all-achievements></header-all-achievements>
+	 	<all-achievements></all-achievements>
+	</div>
+
+
+	<!--  All the scripts and angular stuff. -->
+    <script src="jsEngines/jquery-2.0.3.min.js"></script>
+	<script src="jsEngines/bootstrap.min.js"></script>
+    <script	src="jsEngines/angular.min.js"></script>
+    <script src="jsEngines/jquery.backstretch.min.js"></script>
+     
+	<script src="angular/myApp.js"></script>
+	
+	<script src="angular/directives/d_navbars.js"></script>
+	<script src="angular/directives/d_allAchivements.js"></script>
+	<script src="angular/directives/d_headerAllAchivements.js"></script>
+	<script src="angular/controllers/c_HeaderController.js"></script>
+	<script src="angular/controllers/c_Achievements.js"></script>
+    
+    <script src="js/myBackstretch.js"></script>
+    <script src="js/mySlider.js"></script>
+    
+  </body>
+</html>

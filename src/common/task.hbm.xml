@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="connector.database.model.PlayerInformation" table="player_information">
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="name">
+			<column name="name" />
+		</property>
+		<property name="guid">
+			<column name="guid" />
+		</property>
+		<property name="avgTime">
+			<column name="avg_time" />
+		</property>
+		<property name="count">
+			<column name="count" />
+		</property>
+	</class>
+	
+	<class name="connector.database.model.AchivementsModel" table="achivements">
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="name">
+			<column name="name" />
+		</property>
+		<property name="count">
+			<column name="count" />
+		</property>
+		<property name="description">
+			<column name="description" />
+		</property>
+		<property name="notImg">
+			<column name="neg_img" />
+		</property>
+		<property name="gotImg">
+			<column name="got_img" />
+		</property>
+				<property name="guid">
+			<column name="guid" />
+		</property>
+	</class>
+	
+	<class name="connector.database.model.Progress" table="progress">
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="playerGuid">
+			<column name="player_guid" />
+		</property>
+		<property name="progress">
+			<column name="progress" />
+		</property>
+		<property name="achivementGuid">
+			<column name="achivement_guid" />
+		</property>
+		<property name="dateCompleted">
+			<column name="completed_date" />
+		</property>
+	</class>
+	
+		<class name="connector.database.model.StepProgress" table="stepprogress">
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="stepId">
+			<column name="step_id" />
+		</property>
+		<property name="stepName">
+			<column name="step_name" />
+		</property>
+		<property name="stepVersion">
+			<column name="step_version" />
+		</property>
+		<property name="stepProgress">
+			<column name="step_progress" />
+		</property>
+		<property name="completed">
+			<column name="completed" />
+		</property>
+		<property name="timeTaken">
+			<column name="time_taken" />
+		</property>
+		<property name="userGuid">
+			<column name="user_guid" />
+		</property>
+	</class>
+
+</hibernate-mapping>
